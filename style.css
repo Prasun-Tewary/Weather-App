@@ -4,43 +4,40 @@
   box-sizing: border-box;
   font-family: gilroy;
 }
-
 html, body{
   height: 100%;
   width:100%;
-  /*color: white;*/
 }
-
-.main{
-  height: 100%;
-  width:100%;
+.page1{
+  height: 100vh;
+  width:100vw;
   background-image: url("https://images.unsplash.com/photo-1574169208538-4f45163ade8d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   padding: 30px;
 }
-.main .page1{
+.container{
   height: 100%;
   width: 40%;
   border-radius: 20px;
   background-color: wheat;
-  padding: 25px;
+  padding: 40px 25px;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.page1 .search{
+.container .search{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 .search .cite{
   border: 1px solid #3498db;
   padding: 15px;
   border-radius: 10px;
-  width: 20vw;
+  width: 30vw;
 }
 .search button{
   cursor: pointer;
@@ -57,7 +54,7 @@ html, body{
   font-size: 1.5vw;
 }
 .cityinfo{
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +72,7 @@ html, body{
   font-weight: 500;
 }
 .tempinfo{
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,40 +82,41 @@ html, body{
   font-size: 2.5vw;
 }
 .tempinfo .temp{
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 700;
 }
 .section{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 30px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 20px;
   width: 100%;
   height: 150px
 }
 .section .windinfo{
-  padding: 10px;
+  padding: 25px 10px;
   background-color: brown;
   height: 100%;
-  width: 130px;
+  width: 120px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px black;
   text-align: center;
 }
 .section .humidityinfo{
-  padding: 10px;
+  padding: 25px 10px;
   background-color: brown;
   height: 100%;
-  width: 130px;
+  width: 120px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px black;
   text-align: center;
 }
 .section .visibilityinfo{
-  padding: 10px;
+  padding: 25px 10px;
   background-color: brown;
   height: 100%;
-  width: 130px;
+  width: 120px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px black;
   text-align: center;
@@ -129,4 +127,88 @@ html, body{
 }
 .section h3{
   font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .page1{
+  padding: 10px;
+  }
+.container{
+  height: 60%;
+  width: 70%;
+  padding: 30px 15px  ;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .search{
+  gap: 10px;
+}
+.search .cite{
+  width: 40vw;
+}
+.search button{
+  padding: 15px 15px;
+}
+.search i{
+  font-size:4vw;
+}
+.cityinfo{
+  margin-top: 20px;
+}
+.cityinfo h2{
+  font-size: 7vw;
+  font-weight: 700;
+  padding:10px;
+  margin-bottom: 20px;
+}
+.cityinfo p{
+  background-color: rgb(168, 218, 247);
+  border-radius: 50px;
+  padding: 4px 10px;
+  font-weight: 500;
+}
+.tempinfo .description{
+  font-size: 5.5vw;
+}
+.tempinfo .temp{
+  margin-top: 4vw;
+  font-size: 9vw;
+  font-weight: 700;
+}
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+  height: 150px
+}
+.section .windinfo{
+  padding-top: 30px;
+  background-color: brown;
+  height: 100%;
+  width: 80px;
+}
+.section .humidityinfo{
+  padding-top: 30px;
+  background-color: brown;
+  height: 100%;
+  width: 80px;
+}
+.section .visibilityinfo{
+  padding-top: 30px;
+  background-color: brown;
+  height: 100%;
+  width: 80px;
+}
+.section i{
+  font-size: 7vw;
+}
 }
