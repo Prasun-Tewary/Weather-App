@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="page1">
+      <form class="search">
+        <input type="text" class="cite" placeholder="Enter City Name">
+        <button type="submit" id="searchBtn"><i class="ri-search-line"></i></button>
+      </form>
+
+      <div class="cityinfo">
+        <h2 class="city">Delhi</h2>
+        <p>7 Jan 2024</p>
+      </div>
+
+      <div class="tempinfo">
+        <div class="description">
+          <i class="ri-sun-line"></i>
+          <span class="update">Sunny</span>
+        </div>
+        <div class="temp">20°C</div>
+      </div>
+
+      <div class="section">
+        <div class="windinfo">
+          <div class="description2">
+            <i class="ri-windy-line"></i>
+          </div>
+          <h3 class="windSpeed">4 Km/H</h3>
+          <p>Wind</p>
+        </div>
+    
+        <div class="humidityinfo">
+          <div class="description3">
+            <i class="ri-water-percent-line"></i>
+          </div>
+          <h3 class="humidity">45%</h3>
+          <p>Humidity</p>
+        </div>
+    
+        <div class="visibilityinfo">
+          <div class="description4">
+            <i class="ri-eye-line"></i>
+          </div>
+          <h3 class="visibility">4 Km/H</h3>
+          <p>Visibility</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
